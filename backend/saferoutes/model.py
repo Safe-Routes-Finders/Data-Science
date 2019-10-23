@@ -3,9 +3,11 @@ import psycopg2
 
 dbname = "eskdnyfr"
 username = "eskdnyfr"
-pass_word = "NlXqx6b6NMw30uvGubKWK-NOx2mEuddF"
+pass_word = "password"
 host = "salt.db.elephantsql.com"
 
+#takes a lat lon and returns the Area Name
+#DEPRECATED for pipeline category encoder
 def latlontoarea(lat,lon):
     connection = psycopg2.connect(user=username,password=pass_word,host=host, port="5432", database=dbname)
     cursor = connection.cursor()

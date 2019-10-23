@@ -14,7 +14,7 @@ from sqlalchemy import create_engine
 
 dbname = "eskdnyfr"
 username = "eskdnyfr"
-pass_word = "NlXqx6b6NMw30uvGubKWK-NOx2mEuddF"
+pass_word = "password"
 host = "salt.db.elephantsql.com"
 #creating creating engine inserting the area_latlon dataframe to postgres
 try:
