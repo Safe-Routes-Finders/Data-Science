@@ -1,6 +1,7 @@
 from decouple import config
 from flask import Flask, render_template, request
 from .model import latlontoarea,single_prediction,prediction_24hrs,prediction_allareas
+from flask_cors import CORS
 import numpy as numpy
 import pandas as pd
 
@@ -13,6 +14,7 @@ import os,json
 
 def create_app():
     app = Flask(__name__)
+    CORS(app)
     #getting the site path
     SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
     data_url = os.path.join(SITE_ROOT, "data")
